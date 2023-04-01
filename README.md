@@ -5,6 +5,18 @@ A Linux backlight / LEDs controller similar to
 written in Go and featuring smooth brightness changes.
 
 
+## Install
+
+### Requirements
+
+- Go
+
+### Procedure
+
+```
+go install github.com/denysvitali/lightctl@latest
+```
+
 ## Usage
 
 ```plain
@@ -141,6 +153,11 @@ DBUS.
 ## Compiling
 
 ```bash
-go build -o ~/go/bin/lightctl ./
-~/go/bin/lightctl
+go install ./
+```
+
+## Running
+
+```
+lightctl -h
 ```
